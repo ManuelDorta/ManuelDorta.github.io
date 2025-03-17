@@ -25,6 +25,7 @@ body {
     display: flex;
     width: 35px;
     height: 33px;
+    margin-left: 5%;
     margin-right: 5%;
     align-items: center;
 }
