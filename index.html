@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Captura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Juego de Captura de Cuadrados</h1>
+
+    <div id="config">
+        <label>Nombre Jugador 1: <input type="text" id="nombre1" placeholder="Nombre del Jugador 1"></label>
+        <label>Nombre Jugador 2: <input type="text" id="nombre2" placeholder="Nombre del Jugador 2"></label>
+        <label>Color Jugador 1: <input type="color" id="color1" value="#ff0000"></label>
+        <label>Color Jugador 2: <input type="color" id="color2" value="#0000ff"></label>
+        <button id="start">Empezar Juego o reiniciar</button>
+
+        <br><br>
+
+        <label>Jugar contra:</label>
+        <select id="modo-juego">
+            <option value="real">Otro Jugador</option>
+            <option value="bot">Bot</option>
+        </select>
+
+        <br><br>
+
+        <label>Tamaño del tablero:</label>
+        <select id="tamano-tablero">
+            <option value="8">8x8</option>
+            <option value="10">10x10</option>
+            <option value="15" selected>15x15</option>
+        </select>
+
+        <br><br>
+
+        <label>Tiempo por turno (segundos):</label>
+        <input type="number" id="tiempo-turno" value="10" min="1" max="60">
+    </div>
+
+    <div id="turno">Turno de: Jugador 1</div>
+    <div id="temporizador">Tiempo restante: 10s</div>
+    <div id="tablero" class="tablero"></div>
+    <div id="ganador" class="ganador"></div>
+
+    <button id="instrucciones-btn">?</button>
+
+    <div id="instrucciones" class="instrucciones" style="display: none;">
+        <h2>Instrucciones del Juego:</h2>
+        <ul>
+            <li>Haz clic en una casilla para colocar tu color.</li>
+            <li>Si rodeas un color del oponente (vertical u horizontal), lo capturas.</li>
+            <li>El turno cambia automáticamente si pasa el tiempo definido.</li>
+            <li>El jugador con más casillas al final gana.</li>
+            <li>El bot juega aleatoriamente cuando está activado.</li>
+        </ul>
+        <button id="cerrar-instrucciones">Cerrar</button>
+    </div>
+
+    <script src="LoBueno.js"></script>
+</body>
+</html>

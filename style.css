@@ -1,0 +1,146 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+    margin: 0;
+    padding: 20px;
+}
+
+#config {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #000000;
+    background-color: #ffffffd8;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#tablero {
+    display: grid;
+    gap: 2px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ffffffc9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.celda {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.celda:hover {
+    transform: scale(1.1);
+}
+
+#turno, #ganador {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#ganador {
+    color: #2e7d32;
+    font-size: 22px;
+}
+
+#temporizador {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+}
+
+#start {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start:hover {
+    background-color: #45a049;
+}
+
+select, input[type="text"], input[type="color"], input[type="number"] {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+/* Botón de instrucciones */
+#instrucciones-btn {
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #f2a9a9;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#instrucciones-btn:hover {
+    background-color: #ff8787;
+}
+
+#descargar-historial {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 15px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#descargar-historial:hover {
+    background-color: #1976D2;
+}
+
+.instrucciones {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instrucciones ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#cerrar-instrucciones {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#cerrar-instrucciones:hover {
+    background-color: #ff3b3b;
+}
